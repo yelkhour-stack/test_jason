@@ -33,12 +33,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Add Labels
-        uses: christianvuerings/add-labels@v1.1
-        with:
-          labels: major
-        env:
-          GITHUB_TOKEN: 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
+      #- name: Add Labels
+      #  uses: christianvuerings/add-labels@v1.1
+      #  with:
+      #    labels: major
+      #  env:
+      #    GITHUB_TOKEN: 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
 
       - name: label_sponsor
         uses: JasonEtco/is-sponsor-label-action@v1
