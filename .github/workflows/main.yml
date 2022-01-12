@@ -38,12 +38,9 @@ jobs:
         env:
           GITHUB_TOKEN: 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
 
-    - name: Labeler
-        uses: actions/labeler@v3
+      - name: label_sponsor
+      - uses: JasonEtco/is-sponsor-label-action@v1
         with:
-        # The GITHUB_TOKEN secret
-        # repo-token: # optional
-        # The path for the label configurations
-        # configuration-path: # optional, default is .github/labeler.yml
-        # Whether or not to remove labels when matching files are reverted
-        # sync-labels: # optional
+          label: Sponsor ❤️
+        env:
+          GITHUB_TOKEN: $
