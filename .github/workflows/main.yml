@@ -38,6 +38,7 @@ jobs:
       - name: Add Labels
         uses: christianvuerings/add-labels@v1.1
         with:
-          labels: major 1
+          labels: major
+          issue_number: 1
         env:
           GITHUB_TOKEN: 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
