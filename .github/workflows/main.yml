@@ -35,9 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Add Labels
-  # You may pin to the exact commit or the version.
-  # uses: christianvuerings/add-labels@ede518da81f427f037b828421aa08c239bfc7f47
-        uses: christianvuerings/add-labels@v1.1
+      - uses: actions/checkout@v2
+      - uses: christianvuerings/add-labels@v1
         with:
-        # Labels to add
-        labels: test_label1 test_label2
+          labels: |
+            minor release
+            bug
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
