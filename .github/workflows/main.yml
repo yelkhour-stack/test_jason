@@ -34,8 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Add Labels
-      - uses: actions/checkout@v2
+          
+      - name: Add Labels      
       - uses: christianvuerings/add-labels@v1
         with:
           labels: |
