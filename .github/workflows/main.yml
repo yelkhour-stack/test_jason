@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-  pull_request:
+  pull_request: 
     branches: [ main ] 
 
   # Allows you to run this workflow manually from the Actions tab
@@ -38,7 +38,6 @@ jobs:
       - name: Add Labels
         uses: christianvuerings/add-labels@v1.1
         with:
-          labels: minor major
-          to: 1
+          labels: minor major to :1
         env:
           GITHUB_TOKEN: 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
