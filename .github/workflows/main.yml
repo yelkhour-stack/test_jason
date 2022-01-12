@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: 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
 
       - name: label_sponsor
-      - uses: JasonEtco/is-sponsor-label-action@v1
+        uses: JasonEtco/is-sponsor-label-action@v1
         with:
           label: Sponsor ❤️
         env:
