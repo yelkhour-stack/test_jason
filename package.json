@@ -1,0 +1,134 @@
+[
+	{
+		"name": "Type: Type",
+		"color": "e11d21",
+		"aliases": [
+			"PR",
+			"CR",
+			"QR"
+		],
+		"description": "Problem Report; Change Request; Question Raised"
+	},
+	{
+		"name": "Status: Status",
+		"color": "990000",
+		"aliases": [
+			"New",
+			"Analysing",
+			"Analysed",
+			"Solving",
+			"Solved",
+			"Verifying",
+			"Verified",
+			"Validating",
+			"Validated"
+			"Postponed",
+			"Rejected",
+			"Duplicate",
+			"Closed"
+		]
+	},
+	{
+		"name": "Severity: Severity",
+		"color": "fbca04",
+		"aliases": [
+			"Blocking",
+			"High",
+			"Medium",
+			"Low"
+		]
+	},
+	{
+		"name": "Priority: Priority",
+		"color": "009800",
+		"aliases": [
+			"High",
+			"Nominal",
+			"Low"
+		]
+	},
+	{
+		"name": "Impact: Impact",
+		"color": "cc317c",
+		"aliases": [
+			"FW/SW",
+			"Test Env",
+			"Documentation",
+			"FW & Documentation"
+		]
+	},
+	{
+		"name": "Platform: Platform",
+		"color": "cc317c",
+		"aliases": [
+			"X-Cube",
+			"X-Linux"
+		]
+	},
+	{
+		"name": "Product: Product",
+		"color": "207de5",
+		"aliases": [
+			"STM32H7",
+			"STM32U5",
+			"STM32MP1",
+			"IMG-FPGA",
+			"WW4-FPGA",
+			"STM32WW4"
+		]
+	},
+	{
+		"name": "Item: Item",
+		"color": "eb6420",
+		"aliases": [
+			"MW_WLAN",
+			"MW_WPA_Supplicant",
+			"MW_mbed_TLS",
+			"MW_LwIP",
+			"MW_FreeRTOS",
+			"MW_Threadx",
+			"MW_NextDuo", 
+			"Projects",
+			"Others"
+		]
+	},
+	{
+		"name": "Sub-Item: Sub-Item",
+		"color": "009800"
+		"aliases": [
+			"WiFi Stack",
+			"WiFi WLAN Driver",
+			"WiFi API",
+			"TCP/IP",
+			"SSL",
+			"TLS",
+			"Applis_MW_WW4",
+			"Porting",
+			"Documentation",
+			"Others"
+		]
+			
+	},
+	{
+		"name": "Team: Team",
+		"color": "fbca04"
+		"aliases": [
+			"WBL-Prod-Dev",
+			"WBL-IP-Dev",
+			"SRA",
+			"M2B",
+			"Architecture",
+			"Program"
+		]
+	},
+	{
+		"name": "Document: Document",
+		"color": "eb6420"
+		"aliases": [
+			"Architecture",
+			"Requirement"
+			"Test Plan",
+			"Test Report"
+		]
+	}
+]
