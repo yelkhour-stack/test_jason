@@ -36,11 +36,11 @@ jobs:
       - name: install_npm
         run: npm install
         
-      - name: verif  
-        run: make verify
+      #- name: verif  
+      #  run: make verify
         
-      - name: test  
-        run: make test
+      #- name: test  
+      #  run: make test
         
       - name : github-label-sync_install
         run: npm install -g github-label-sync
