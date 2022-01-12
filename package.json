@@ -1,189 +1,56 @@
-[
-  {
-    "name": "duplicate1234",
-    "color": "ededed",
-    "description": "This issue or Pull Request already exists"
+{
+  "name": "@azu/github-label-setup",
+  "version": "4.1.0",
+  "description": "GitHub label setup script.",
+  "keywords": [
+    "github",
+    "label"
+  ],
+  "homepage": "https://github.com/yelkhour-stack/test_jason",
+  "bugs": {
+    "url": "https://github.com/yelkhour-stack/test_jason/issues"
   },
-  {
-    "name": "help wanted",
-    "color": "e99695",
-    "description": "Extra attention is needed"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yelkhour-stack/test_jason.git"
   },
-  {
-    "name": "good first issue",
-    "color": "7057ff",
-    "description": "Good for newcomers",
-    "aliases": [
-      "beginner-friendly",
-      "beginner",
-      "good-starter-issue",
-      "good for beginner",
-      "Good for beginners",
-      "starter-issue",
-      "starter"
-    ]
+  "license": "MIT",
+  "author": "azu",
+  "main": "lib/yelkhour-stack.js",
+  "types": "lib/yelkhour-stack.d.ts",
+  "bin": {
+    "github-label-setup": "./bin/cmd.js"
   },
-  {
-    "name": "Priority: Critical",
-    "color": "ee0701"
+  "directories": {
+    "test": "test"
   },
-  {
-    "name": "Priority: High",
-    "color": "d93f0b"
+  "files": [
+    "bin/",
+    "lib/",
+    "src/",
+    "labels.json"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build",
+    "prepublish": "npm run --if-present build",
+    "watch": "tsc -p . --watch"
   },
-  {
-    "name": "Priority: Medium",
-    "color": "fbca04"
+  "dependencies": {
+    "git-remote-origin-url": "^3.1.0",
+    "github-label-sync": "^2.0.0",
+    "hosted-git-info": "^4.0.2",
+    "meow": "^8.0.0",
+    "try-resolve": "^1.0.1"
   },
-  {
-    "name": "Priority: Low",
-    "color": "0e8a16"
-  },
-  {
-    "name": "Status: Abandoned",
-    "color": "000000",
-    "description": "The issue or Pull Request is wontfix",
-    "aliases": [
-      "wontfix",
-      "invalid"
-    ]
-  },
-  {
-    "name": "Status: Blocked",
-    "color": "ee0701",
-    "description": "Progress on the issue is Blocked",
-    "aliases": [
-      "blocked"
-    ]
-  },
-  {
-    "name": "Status: In Progress",
-    "description": "Work in Progress",
-    "color": "cccccc"
-  },
-  {
-    "name": "Status: Proposal",
-    "color": "d4c5f9",
-    "description": "Request for comments",
-    "aliases": [
-      "idea",
-      "Idea",
-      "proposal",
-      "Proposal",
-      "discussion"
-    ]
-  },
-  {
-    "name": "Status: PR Welcome",
-    "color": "2E7733",
-    "description": "Welcome to Pull Request",
-    "aliases": [
-      "Patch Welcome",
-      "Status: Ready for PR"
-    ]
-  },
-  {
-    "name": "Status: Review Needed",
-    "color": "fbca04",
-    "description": "Request for review comments"
-  },
-  {
-    "name": "Status: Need More Info",
-    "color": "F9C90A",
-    "description": "Lacks enough info to make progress"
-  },
-  {
-    "name": "Type: Breaking Change",
-    "color": "b60205",
-    "description": "Includes breaking changes",
-    "aliases": [
-      "breaking",
-      "breaking-change"
-    ]
-  },
-  {
-    "name": "Type: Bug",
-    "color": "ee0701",
-    "description": "Bug or Bug fixes",
-    "aliases": [
-      "bug"
-    ]
-  },
-  {
-    "name": "Type: Documentation",
-    "color": "0e8a16",
-    "description": "Documentation only changes",
-    "aliases": [
-      "documents",
-      "document"
-    ]
-  },
-  {
-    "name": "Type: Feature",
-    "color": "1d76db",
-    "description": "New Feature",
-    "aliases": [
-      "enhancement"
-    ]
-  },
-  {
-    "name": "Type: Refactoring",
-    "color": "fbca04",
-    "description": "A code change that neither fixes a bug nor adds a feature",
-    "aliases": [
-      "refactor"
-    ]
-  },
-  {
-    "name": "Type: Testing",
-    "color": "257759",
-    "description": "Adding missing tests or correcting existing tests",
-    "aliases": [
-      "test",
-      "testing"
-    ]
-  },
-  {
-    "name": "Type: Maintenance",
-    "color": "abd406",
-    "description": "Repository Maintenance",
-    "aliases": [
-      "greenkeeper",
-      "maintenance"
-    ]
-  },
-  {
-    "name": "Type: CI",
-    "color": "ffd412",
-    "description": "Changes to CI configuration files and scripts",
-    "aliases": [
-      "travis",
-      "ci",
-      "circleci"
-    ]
-  },
-  {
-    "name": "Type: Question",
-    "color": "cc317c",
-    "description": "Further information is requested",
-    "aliases": [
-      "question"
-    ]
-  },
-  {
-    "name": "Type: Security",
-    "color": "ee0701",
-    "description": "Vulnerability disclosure or Fixing security issue",
-    "aliases": [
-      "security"
-    ]
-  },
-  {
-    "name": "Type: Dependencies",
-    "color": "0366d6",
-    "description": "Dependency issues or Changes to dependency files",
-    "aliases": [
-      "dependencies"
-    ]
+  "devDependencies": {
+    "@types/github-label-sync": "^2.0.0",
+    "@types/hosted-git-info": "^3.0.1",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.0.2",
+    "mocha": "^8.4.0",
+    "ts-node": "^9.1.1",
+    "ts-node-test-register": "^9.0.1",
+    "typescript": "^4.2.4"
   }
-]
+}
