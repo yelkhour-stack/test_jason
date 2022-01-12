@@ -1,134 +1,189 @@
 [
-	{
-		"name": "Type: Type",
-		"color": "e11d21",
-		"aliases": [
-			"PR",
-			"CR",
-			"QR"
-		],
-		"description": "Problem Report; Change Request; Question Raised"
-	},
-	{
-		"name": "Status: Status",
-		"color": "990000",
-		"aliases": [
-			"New",
-			"Analysing",
-			"Analysed",
-			"Solving",
-			"Solved",
-			"Verifying",
-			"Verified",
-			"Validating",
-			"Validated"
-			"Postponed",
-			"Rejected",
-			"Duplicate",
-			"Closed"
-		]
-	},
-	{
-		"name": "Severity: Severity",
-		"color": "fbca04",
-		"aliases": [
-			"Blocking",
-			"High",
-			"Medium",
-			"Low"
-		]
-	},
-	{
-		"name": "Priority: Priority",
-		"color": "009800",
-		"aliases": [
-			"High",
-			"Nominal",
-			"Low"
-		]
-	},
-	{
-		"name": "Impact: Impact",
-		"color": "cc317c",
-		"aliases": [
-			"FW/SW",
-			"Test Env",
-			"Documentation",
-			"FW & Documentation"
-		]
-	},
-	{
-		"name": "Platform: Platform",
-		"color": "cc317c",
-		"aliases": [
-			"X-Cube",
-			"X-Linux"
-		]
-	},
-	{
-		"name": "Product: Product",
-		"color": "207de5",
-		"aliases": [
-			"STM32H7",
-			"STM32U5",
-			"STM32MP1",
-			"IMG-FPGA",
-			"WW4-FPGA",
-			"STM32WW4"
-		]
-	},
-	{
-		"name": "Item: Item",
-		"color": "eb6420",
-		"aliases": [
-			"MW_WLAN",
-			"MW_WPA_Supplicant",
-			"MW_mbed_TLS",
-			"MW_LwIP",
-			"MW_FreeRTOS",
-			"MW_Threadx",
-			"MW_NextDuo", 
-			"Projects",
-			"Others"
-		]
-	},
-	{
-		"name": "Sub-Item: Sub-Item",
-		"color": "009800"
-		"aliases": [
-			"WiFi Stack",
-			"WiFi WLAN Driver",
-			"WiFi API",
-			"TCP/IP",
-			"SSL",
-			"TLS",
-			"Applis_MW_WW4",
-			"Porting",
-			"Documentation",
-			"Others"
-		]
-			
-	},
-	{
-		"name": "Team: Team",
-		"color": "fbca04"
-		"aliases": [
-			"WBL-Prod-Dev",
-			"WBL-IP-Dev",
-			"SRA",
-			"M2B",
-			"Architecture",
-			"Program"
-		]
-	},
-	{
-		"name": "Document: Document",
-		"color": "eb6420"
-		"aliases": [
-			"Architecture",
-			"Requirement"
-			"Test Plan",
-			"Test Report"
-		]
-	}
+  {
+    "name": "duplicate",
+    "color": "ededed",
+    "description": "This issue or Pull Request already exists"
+  },
+  {
+    "name": "help wanted",
+    "color": "e99695",
+    "description": "Extra attention is needed"
+  },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "Good for newcomers",
+    "aliases": [
+      "beginner-friendly",
+      "beginner",
+      "good-starter-issue",
+      "good for beginner",
+      "Good for beginners",
+      "starter-issue",
+      "starter"
+    ]
+  },
+  {
+    "name": "Priority: Critical",
+    "color": "ee0701"
+  },
+  {
+    "name": "Priority: High",
+    "color": "d93f0b"
+  },
+  {
+    "name": "Priority: Medium",
+    "color": "fbca04"
+  },
+  {
+    "name": "Priority: Low",
+    "color": "0e8a16"
+  },
+  {
+    "name": "Status: Abandoned",
+    "color": "000000",
+    "description": "The issue or Pull Request is wontfix",
+    "aliases": [
+      "wontfix",
+      "invalid"
+    ]
+  },
+  {
+    "name": "Status: Blocked",
+    "color": "ee0701",
+    "description": "Progress on the issue is Blocked",
+    "aliases": [
+      "blocked"
+    ]
+  },
+  {
+    "name": "Status: In Progress",
+    "description": "Work in Progress",
+    "color": "cccccc"
+  },
+  {
+    "name": "Status: Proposal",
+    "color": "d4c5f9",
+    "description": "Request for comments",
+    "aliases": [
+      "idea",
+      "Idea",
+      "proposal",
+      "Proposal",
+      "discussion"
+    ]
+  },
+  {
+    "name": "Status: PR Welcome",
+    "color": "2E7733",
+    "description": "Welcome to Pull Request",
+    "aliases": [
+      "Patch Welcome",
+      "Status: Ready for PR"
+    ]
+  },
+  {
+    "name": "Status: Review Needed",
+    "color": "fbca04",
+    "description": "Request for review comments"
+  },
+  {
+    "name": "Status: Need More Info",
+    "color": "F9C90A",
+    "description": "Lacks enough info to make progress"
+  },
+  {
+    "name": "Type: Breaking Change",
+    "color": "b60205",
+    "description": "Includes breaking changes",
+    "aliases": [
+      "breaking",
+      "breaking-change"
+    ]
+  },
+  {
+    "name": "Type: Bug",
+    "color": "ee0701",
+    "description": "Bug or Bug fixes",
+    "aliases": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Type: Documentation",
+    "color": "0e8a16",
+    "description": "Documentation only changes",
+    "aliases": [
+      "documents",
+      "document"
+    ]
+  },
+  {
+    "name": "Type: Feature",
+    "color": "1d76db",
+    "description": "New Feature",
+    "aliases": [
+      "enhancement"
+    ]
+  },
+  {
+    "name": "Type: Refactoring",
+    "color": "fbca04",
+    "description": "A code change that neither fixes a bug nor adds a feature",
+    "aliases": [
+      "refactor"
+    ]
+  },
+  {
+    "name": "Type: Testing",
+    "color": "257759",
+    "description": "Adding missing tests or correcting existing tests",
+    "aliases": [
+      "test",
+      "testing"
+    ]
+  },
+  {
+    "name": "Type: Maintenance",
+    "color": "abd406",
+    "description": "Repository Maintenance",
+    "aliases": [
+      "greenkeeper",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "Type: CI",
+    "color": "ffd412",
+    "description": "Changes to CI configuration files and scripts",
+    "aliases": [
+      "travis",
+      "ci",
+      "circleci"
+    ]
+  },
+  {
+    "name": "Type: Question",
+    "color": "cc317c",
+    "description": "Further information is requested",
+    "aliases": [
+      "question"
+    ]
+  },
+  {
+    "name": "Type: Security",
+    "color": "ee0701",
+    "description": "Vulnerability disclosure or Fixing security issue",
+    "aliases": [
+      "security"
+    ]
+  },
+  {
+    "name": "Type: Dependencies",
+    "color": "0366d6",
+    "description": "Dependency issues or Changes to dependency files",
+    "aliases": [
+      "dependencies"
+    ]
+  }
 ]
