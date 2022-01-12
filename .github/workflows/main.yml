@@ -36,10 +36,6 @@ jobs:
           echo test, and deploy your project.
           
       - name: Add Labels      
-        uses: christianvuerings/add-labels@v1
+        uses: christianvuerings/add-labels@v1.1
         with:
-          labels: |
-            minor release
-            bug
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          labels: minor major
