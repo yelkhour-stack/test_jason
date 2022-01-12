@@ -33,6 +33,20 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
+      - name: install_npm
+        run: npm install
+        
+      - name: verif  
+        run: make verify
+        
+      - name: test  
+        run: make test
+        
+      - name : github-label-sync_install
+        run: npm install -g github-label-sync
+        
+      - name : run_git
+        run: github-label-sync --access-token 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 --labels test_jason/labels.json
       #- name: Add Labels
       #  uses: christianvuerings/add-labels@v1.1
       #  with:
@@ -46,3 +60,5 @@ jobs:
           label: Sponsor ❤️
         env:
           GITHUB_TOKEN: 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
+          
+          
